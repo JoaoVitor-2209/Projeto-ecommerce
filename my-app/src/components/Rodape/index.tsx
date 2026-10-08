@@ -1,6 +1,6 @@
 export default function Rodape() {
   return (
-    <footer className="bg-amber-600">
+    <footer>
         <p>Rodape</p>
     </footer>
   )

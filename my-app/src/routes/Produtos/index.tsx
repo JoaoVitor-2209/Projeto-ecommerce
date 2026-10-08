@@ -73,17 +73,17 @@ export default function Produtos() {
     <main>
       <h2>Produtos</h2>
 
-      <dialog ref={dialogRef} style={{ padding: "20px", borderRadius: "8px", border: "1px solid #ccc" }}>
+      <dialog ref={dialogRef} className={{ padding: "20px", borderRadius: "8px", border: "1px solid #ccc" }}>
         <h3>Confirmar Exclusão de Produto</h3>
         <p>Tem certeza que deseja excluir este produto?</p>
-        <div style={{ display: "flex", gap: "10px", justifyContent: "flex-end", marginTop: "15px" }}>
+        <div className={{ display: "flex", gap: "10px", justifyContent: "flex-end", marginTop: "15px" }}>
           <button onClick={()=> dialogRef.current?.close()}>Cancelar</button>
-          <button onClick={()=> handleDelete()} style={{ background: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer" }}>Excluir</button>
+          <button onClick={()=> handleDelete()} className={{ background: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer" }}>Excluir</button>
         </div>
 
       </dialog>
 
-      <table border={1} style={{margin:"0 auto",borderCollapse:"collapse"}}>
+      <table border={1} className={{margin:"0 auto",borderCollapse:"collapse"}}>
         <thead>
           <tr>
             <th>ID</th>

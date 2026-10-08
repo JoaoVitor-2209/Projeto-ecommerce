@@ -47,22 +47,22 @@ export default function CadProduto() {
                     <div>
                         <label htmlFor="nome">Nome do Produto </label>
                         <input type="text" id="nome" {...register("nome", { required: "É obrigatório um nome para o produto!", minLength: { value: 3, message: "Permitido apenas nomes com no mínimo 3 caracteres!" } })} />
-                        {errors.nome?.message && <span style={{ color: "#ff0000" }}>{errors.nome?.message}</span>}
+                        {errors.nome?.message && <span className="errorMsg">{errors.nome?.message}</span>}
                     </div>
                     <div>
                         <label htmlFor="preco">Preço </label>
                         <input type="number" step={0.1} id="preco" {...register("preco", { required: "É obrigatório digitar um valor!", min: { value: 1, message: "Permitidos apenas valores maiores que zero!" } })} />
-                        {errors.preco?.message && <span style={{ color: "#ff0000" }}>{errors.preco?.message}</span>}
+                        {errors.preco?.message && <span className="errorMsg">{errors.preco?.message}</span>}
                     </div>
                     <div>
                         <label htmlFor="estoque">Estoque </label>
                         <input type="number" step={1} id="estoque" {...register("estoque", { required: "É obrigatório digitar um valor!", min: { value: 1, message: "Permitidos apenas valores maiores que zero!" } })} />
-                        {errors.estoque?.message && <span style={{ color: "#ff0000" }}>{errors.estoque?.message}</span>}
+                        {errors.estoque?.message && <span className="errorMsg">{errors.estoque?.message}</span>}
                     </div>
                     <div>
                         <label htmlFor="avatar">Imagem do Produto </label>
                         <input type="url" id="avatar" {...register("avatar", { required: "É obrigatório uma iamgem para o produto!", minLength: { value: 10, message: "Permitido apenas nomes com no mínimo 10 caracteres!" }})} />
-                        {errors.avatar?.message && <span style={{ color: "#ff0000" }}>{errors.avatar?.message}</span>}
+                        {errors.avatar?.message && <span className="errorMsg">{errors.avatar?.message}</span>}
                     </div>
                     <div>
                         <button type="submit">CADASTRAR</button>

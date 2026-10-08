@@ -1,8 +1,9 @@
 
 export default function Error() {
   return (
-    <header>
-        <h2>Error</h2>
-    </header>
+    <main>
+      <h2>404 - Not Found</h2>
+      <p>Página não encontrada!</p>
+    </main>
   )
 }
