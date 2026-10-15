@@ -5,7 +5,7 @@ import Rodape from "./components/Rodape"
 
 export default function App() {
   return (
-    <div className="principal h-screen">
+    <div className="principal">
       <Cabecalho/>
       <Outlet/>
       <Rodape/>
