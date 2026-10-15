@@ -2,29 +2,33 @@
 
 @layer base {
     .principal {
-
         @apply bg-gray-400 w-screen h-screen flex flex-col justify-between;
 
-        & header{
-            @apply bg-gray-500 flexjustify-around h-20;
+        & header {
+            @apply bg-gray-500 flex justify-around h-20;
 
             & nav {
                 @apply w-full h-full bg-amber-200 flex items-center justify-center;
+
                 & ul {
                     @apply w-[50%] bg-amber-600 flex items-center justify-center rounded-[5px];
+
                     & li {
                         @apply inline-block m-5;
 
                         & a {
                             @apply hover:underline;
+                        }
                     }
                 }
             }
         }
-        & main{
+
+        & main {
             @apply bg-gray-700 w-full h-full;
         }
-        & footer{
+
+        & footer {
             @apply bg-gray-800 h-20;
         }
     }
